@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Penjualan Jaket</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Logo Penjualan Jaket</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Login Pengguna</h2>
+        
+        <div class="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Masukkan Username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Masukkan Password" required>
+            
+            <button onclick="prosesLogin()">Login</button>
+
+            <p id="error-message" style="color: red; display: none;">Username atau Password salah!</p>
+        </div>
+
+        <button onclick="window.location.href='index.html'">Kembali ke Beranda</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Penjualan Jaket</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

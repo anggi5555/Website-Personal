@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Penjualan Jaket</title>
+    <link rel="stylesheet" href="transaksi.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Logo Penjualan Jaket</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Transaksi Pemesanan Jaket</h2>
+        
+        <div id="form-transaksi">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama lengkap" required>
+            
+            <label for="alamat">Alamat Pengiriman:</label>
+            <textarea id="alamat" placeholder="Masukkan alamat lengkap" required></textarea>
+            
+            <label for="jaket">Pilih Jaket:</label>
+            <select id="jaket">
+                <option value="Jaket Casual - Rp 200.000">Jaket Casual - Rp 200.000</option>
+                <option value="Jaket Outdoor - Rp 250.000">Jaket Outdoor - Rp 250.000</option>
+                <option value="Jaket Bomber - Rp 300.000">Jaket Bomber - Rp 300.000</option>
+            </select>
+            
+            <button onclick="prosesTransaksi()">Proses Transaksi</button>
+        </div>
+
+        <div id="pesanan-sukses" style="display: none;">
+            <h3>Transaksi Berhasil!</h3>
+            <p id="detail-pesanan"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Penjualan Jaket</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
